@@ -1,0 +1,15 @@
+<h1><%= @task.title %></h1>
+
+<p><%= @task.details %></p>
+
+<p>
+  <% if @task.completed == true %>
+    <%= "This task is completed." %>
+    <% else %>
+    <%= "This task is not completed." %>
+  <% end %>
+</p>
+
+<p><%= link_to "Edit task", tasks_path %></p>
+
+<p><%= link_to "Back to list", tasks_path %></p>
